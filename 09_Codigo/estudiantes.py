@@ -4,9 +4,9 @@ Registro de estudiantes y validaciones (HU03)
 Responsable: Marlon Sanabria
 """
 
-from archivos import cargar_lista, guardar_lista, generar_id
+from archivos import cargar_lista, guardar_lista, generar_id, ruta_de
 
-RUTA_ESTUDIANTES = "estudiantes.json"
+RUTA_ESTUDIANTES = ruta_de("estudiantes.json")
 
 
 def buscar_por_documento(estudiantes, documento):

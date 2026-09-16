@@ -14,7 +14,7 @@ def ruta_de(nombre_archivo):
 
 def cargar_lista(ruta):
     try:
-        with open(ruta, "r", encoding="utf-8") as archsivo:
+        with open(ruta, "r", encoding="utf-8") as archivo:
             contenido = archivo.read().strip()
     except FileNotFoundError:
         #La primera vez que se ejecuta el programa el archivo todavía no existe.
