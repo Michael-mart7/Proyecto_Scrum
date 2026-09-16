@@ -12,7 +12,8 @@ terminadas y se quedan en el Backlog.
 
 ## Qué demostramos
 
-Corrimos el programa desde la consola e hicimos el recorrido completo:
+Corrimos el programa desde la consola (`python main.py` dentro de `09_Codigo`) e hicimos el
+recorrido completo:
 
 1. Registramos un equipo nuevo e intentamos registrar uno con un código repetido, para mostrar
    que el sistema lo rechaza.
@@ -32,21 +33,25 @@ solo en memoria.
 |---|---|---|
 | HU01 Registrar equipos | Aceptada | Cumple los cinco criterios |
 | HU02 Consultar equipos | Aceptada | Muestra el conteo de disponibles sobre el total |
-| HU03 Registrar estudiantes | Aceptada con observación | Las validaciones funcionan, ver observaciones |
+| HU03 Registrar estudiantes | Aceptada con observación | Valida y guarda bien, pero falta el programa académico |
 | HU04 Registrar préstamo | Aceptada | El equipo cambia solo a *Prestado* y los dos archivos quedan iguales |
 | HU05 Registrar devolución | Aceptada | El equipo vuelve a *Disponible* |
-| HU06 Equipos prestados | Por confirmar | Depende de que esté la consulta en `prestamos.py` |
-| HU07 Historial | Por confirmar | Igual que HU06 |
+| HU06 Equipos prestados | No aceptada | La consulta no quedó integrada en `prestamos.py` |
+| HU07 Historial | No aceptada | Igual que HU06 |
 | HU08 Eliminar equipos | Aceptada | No deja borrar un equipo prestado |
+
+**Puntos aceptados:** 19 de 29. Los 16 del compromiso firme más los 3 de HU08.
 
 ## Observaciones del Product Owner
 
-- **HU03 tiene dos cosas por corregir.** El registro de estudiantes no alcanza a guardar en el
-  archivo por un error en la ruta, así que el estudiante se pierde al cerrar el programa.
-  Además, el enunciado pide también el **programa académico** y ahora mismo solo se piden
-  nombre, documento y correo. Por eso la acepto con observación y no de una.
-- **HU06 y HU07 eran alcance adicional**, no compromiso firme. Que queden pendientes no afecta
-  el objetivo del Sprint, porque el flujo mínimo de prestar y devolver sí quedó funcionando.
+- **HU03 se acepta con una observación.** Las validaciones funcionan y el estudiante queda
+  guardado aunque se cierre el programa. Lo que falta es el **programa académico**, que pide el
+  enunciado: ahora solo se piden nombre, documento y correo. Queda anotado para el siguiente
+  Sprint.
+- **HU06 y HU07 vuelven al Product Backlog.** En el menú aparecen, pero al elegirlas dicen que
+  todavía no están listas, así que no cumplen sus criterios. Eran alcance adicional y no
+  compromiso firme, y para el próximo Sprint deberían ir de primeras porque dependen de HU04,
+  que ya está hecha.
 - El objetivo del Sprint se cumplió: se puede registrar, prestar, consultar y devolver, y todo
   queda guardado en JSON.
 
@@ -92,6 +97,7 @@ que la demostración empiece limpia.
 **Cierre (Juan, como PO)**
 
 > «Con lo que vimos, acepto HU01, HU02, HU04, HU05 y HU08. HU03 la acepto con una observación:
-> hay que arreglar el guardado y agregar el programa académico. HU06 y HU07 quedan pendientes,
-> pero eran alcance adicional y no el compromiso del Sprint. El objetivo se cumplió: se puede
-> prestar, consultar y devolver, y los datos quedan guardados. Gracias.»
+> falta pedir el programa académico. HU06 y HU07 no las acepto porque todavía no están
+> terminadas, así que vuelven al Product Backlog; eran alcance adicional y no el compromiso del
+> Sprint. En total aceptamos 19 de los 29 puntos. El objetivo se cumplió: se puede prestar,
+> consultar y devolver, y los datos quedan guardados. Gracias.»
