@@ -14,7 +14,7 @@ def ruta_de(nombre_archivo):
 
 def cargar_lista(ruta):
     try:
-        with open(ruta, "r", encoding="utf-8") as archivo:
+        with open(ruta, "r", encoding="utf-8") as archsivo:
             contenido = archivo.read().strip()
     except FileNotFoundError:
         #La primera vez que se ejecuta el programa el archivo todavía no existe.
@@ -32,3 +32,17 @@ def cargar_lista(ruta):
         raise ValueError(f"El archivo '{ruta}' debería contener una lista de registros.")
 
     return datos
+
+def guardar_lista(ruta, datos):
+    try:
+        os.makedirs(os.path.dirname(ruta), exist_ok=True)
+        with open(ruta, "w", encoding="utf-8") as archivo:
+            json.dump(datos, archivo, indent=4, ensure_ascii=False)
+    except OSError as detalle:
+        raise ValueError(f"No se pudo guardar '{ruta}': {detalle}")
+
+
+def generar_id(registros):
+    if not registros:
+        return 1
+    return max(registro["id"] for registro in registros) + 1
