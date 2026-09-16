@@ -17,13 +17,23 @@ quedara guardado en archivos JSON. Eso quedó funcionando.
 Planificamos 29 Story Points repartidos en ocho historias: 16 de compromiso firme (HU01 a HU05)
 y 13 de alcance adicional (HU06 a HU08).
 
+## Cómo terminó el Sprint
+
+En la Sprint Review se aceptaron **19 de los 29 puntos**:
+
+- **Aceptadas:** HU01, HU02, HU04, HU05 y HU08.
+- **Aceptada con observación:** HU03. Funciona y guarda, pero falta pedir el programa académico.
+- **No aceptadas:** HU06 y HU07. No quedaron integradas y vuelven al Product Backlog.
+
+Todo el compromiso firme quedó cumplido. Lo que no alcanzó era alcance adicional.
+
 ## Cómo nos organizamos
 
 | Integrante | Rol | De qué se encargó |
 |---|---|---|
 | Juan Polanco | Product Owner | Product Backlog, validar las historias, `prestamos.py` y `main.py` |
 | Marlon Sanabria | Scrum Master | Acta de Planning, tablero, `estudiantes.py` y la función para elegir de una lista |
-| Michael Martinez | Developer | `archivos.py` y `equipos.py` |
+| Michael Martinez | Developer | `archivos.py`, `equipos.py`, datos de ejemplo y plan de pruebas |
 
 Aunque cada uno tenía un rol, los tres programamos. En un equipo de tres personas no da para que
 alguien solo administre.
@@ -40,6 +50,9 @@ Cada uno tiene su acta y su video.
 
 ## El código
 
+Está en la carpeta `09_Codigo` y se ejecuta desde ahí con `python main.py`. No usa librerías
+externas, solo Python.
+
 Quedó separado en módulos, cada uno con una responsabilidad:
 
 - `archivos.py` es el único que lee y escribe los JSON. Así la lectura de archivos está en un
@@ -52,6 +65,12 @@ Quedó separado en módulos, cada uno con una responsabilidad:
 Lo que más nos costó pensar fue que el préstamo y el estado del equipo se guarden juntos. Si se
 guarda uno y no el otro, queda un préstamo registrado con el equipo diciendo que está
 disponible, y ahí el sistema empieza a mentir.
+
+## Pruebas
+
+Las pruebas son manuales, desde la consola. El plan está en `07_Pruebas/Plan_de_Pruebas.md` y
+tiene 36 casos: por cada historia hay al menos uno positivo y uno negativo, más algunos de borde
+como opciones inválidas en el menú o un JSON dañado.
 
 ## Dificultades
 
@@ -86,6 +105,8 @@ las dejó para el final.
 |---|---|
 | Repositorio | https://github.com/Michael-mart7/Proyecto_Scrum |
 | Tablero | [pegar enlace] |
+| Video de la Sprint Planning | [pegar enlace] |
 | Video de la Daily | [pegar enlace] |
 | Video de la Sprint Review | [pegar enlace] |
 | Video de la Retrospectiva | [pegar enlace] |
+| Plan de pruebas | https://github.com/Michael-mart7/Proyecto_Scrum/blob/main/07_Pruebas/Plan_de_Pruebas.md |
