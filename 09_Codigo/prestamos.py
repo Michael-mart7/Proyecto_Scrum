@@ -2,6 +2,9 @@
 prestamos.py
 Registro de prestamos y devoluciones (HU04 y HU05)
 Responsable: Juan Polanco
+
+Consultas de prestamos (HU06 y HU07)
+Responsable: Marlon Sanabria
 """
 
 from datetime import date
@@ -103,4 +106,28 @@ def registrar_devolucion(prestamos, equipos, id_prestamo):
     return True, f"El equipo {prestamo['codigo_equipo']} vuelve a estar disponible."
 
 
-# HU06 (prestamos activos) y HU07 (historial) las hace Marlon, van aqui debajo.
+def prestamos_activos(prestamos):
+    """
+    HU06 - Consultar equipos prestados.
+    Responsable: Marlon Sanabria
+
+    Filtra solo los prestamos que siguen en estado Activo. Si no hay
+    ninguno, quien llame a esta funcion recibe una lista vacia y es
+    responsabilidad de main.py avisarlo ("No hay equipos prestados."),
+    para no mezclar logica de negocio con impresion en pantalla.
+    """
+    return [prestamo for prestamo in prestamos if prestamo["estado"] == ESTADO_ACTIVO]
+
+
+def historial(prestamos):
+    """
+    HU07 - Historial de prestamos.
+    Responsable: Marlon Sanabria
+
+    Devuelve todos los prestamos, activos y devueltos, en el orden en que
+    se registraron (el mismo orden en que ya estan guardados en la lista,
+    que a su vez viene del JSON). Cada prestamo trae su "estado" y su
+    "fecha_devolucion"; esta queda en None mientras no se haya devuelto,
+    y main.py la muestra como "pendiente" en ese caso.
+    """
+    return list(prestamos)
