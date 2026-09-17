@@ -1,5 +1,12 @@
 [
     {
+        "codigo": "EQ-001",
+        "tipo": "Portátil",
+        "marca": "Lenovo",
+        "modelo": "ThinkPad E14",
+        "estado": "Disponible"
+    },
+    {
         "codigo": "EQ-002",
         "tipo": "Tablet",
         "marca": "Samsung",
@@ -11,20 +18,6 @@
         "tipo": "Videobeam",
         "marca": "Epson",
         "modelo": "PowerLite X49",
-        "estado": "Disponible"
-    },
-    {
-        "codigo": "EQ-004",
-        "tipo": "portátil",
-        "marca": "HP",
-        "modelo": "ProBook 440",
-        "estado": "Disponible"
-    },
-    {
-        "codigo": "EQ-001",
-        "tipo": "Portátil",
-        "marca": "HP",
-        "modelo": "15",
         "estado": "Disponible"
     }
 ]
