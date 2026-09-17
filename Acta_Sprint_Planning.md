@@ -6,9 +6,8 @@
 
 ## Sprint Goal
 
-> [Escribir aqui la frase acordada entre los tres. Ejemplo: "Entregar un MVP por consola
-> que permita registrar equipos y estudiantes, y gestionar prestamos y devoluciones con
-> datos en JSON."]
+> Entregar un MVP por consola que permita registrar equipos y estudiantes, prestar y devolver
+> equipos, y que toda la informacion quede guardada en archivos JSON.
 
 ## Historias seleccionadas
 
