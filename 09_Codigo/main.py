@@ -154,13 +154,9 @@ def registrar_devolucion(datos):
 
 
 def consultar_prestados(datos):
-    """HU06 - la funcion prestamos_activos(prestamos) la agrega Marlon en prestamos.py"""
+    """HU06"""
     print("\n--- Equipos prestados ---")
-    try:
-        activos = mod_prestamos.prestamos_activos(datos["prestamos"])
-    except AttributeError:
-        print("Esta opcion todavia no esta lista.")
-        return
+    activos = mod_prestamos.prestamos_activos(datos["prestamos"])
 
     if not activos:
         print("No hay equipos prestados.")
@@ -171,13 +167,9 @@ def consultar_prestados(datos):
 
 
 def historial_prestamos(datos):
-    """HU07 - la funcion historial(prestamos) la agrega Marlon en prestamos.py"""
+    """HU07"""
     print("\n--- Historial de prestamos ---")
-    try:
-        todos = mod_prestamos.historial(datos["prestamos"])
-    except AttributeError:
-        print("Esta opcion todavia no esta lista.")
-        return
+    todos = mod_prestamos.historial(datos["prestamos"])
 
     if not todos:
         print("Todavia no hay prestamos.")
