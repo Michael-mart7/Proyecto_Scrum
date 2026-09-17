@@ -3,6 +3,7 @@
 **Producto:** Sistema de Préstamo de Equipos Tecnológicos
 **Product Owner:** Juan Polanco
 **Sprint 1:** 14 al 18 de septiembre de 2026
+**Tablero en Jira:** https://marlon07721.atlassian.net/jira/software/projects/SCRUM/boards/1
 
 ## De qué se trata
 
@@ -25,7 +26,7 @@ uso para decidir si una historia está terminada o no.
 
 > Como administrador, quiero registrar equipos tecnológicos para mantener actualizado el inventario.
 
-Para darla por terminada:
+**Criterios de aceptación:**
 - Pide código, tipo, marca y modelo.
 - No deja guardar ningún campo vacío.
 - Si el código ya existe, avisa y no crea un duplicado.
@@ -39,7 +40,7 @@ Para darla por terminada:
 
 > Como administrador, quiero consultar los equipos registrados para conocer su disponibilidad.
 
-Para darla por terminada:
+**Criterios de aceptación:**
 - Muestra código, tipo, marca, modelo y estado de cada equipo.
 - Al final dice cuántos hay disponibles sobre el total.
 - Si no hay equipos, lo dice en vez de mostrar una lista vacía.
@@ -52,7 +53,7 @@ Para darla por terminada:
 
 > Como administrador, quiero registrar estudiantes para asociarlos a los préstamos.
 
-Para darla por terminada:
+**Criterios de aceptación:**
 - Pide nombre, documento y correo.
 - El documento solo acepta números y no se puede repetir.
 - El correo tiene que tener un arroba, algo antes, algo después y un punto en el dominio.
@@ -66,7 +67,7 @@ Para darla por terminada:
 
 > Como administrador, quiero registrar el préstamo de un equipo a un estudiante.
 
-Para darla por terminada:
+**Criterios de aceptación:**
 - Solo deja elegir equipos que estén disponibles.
 - El estudiante se elige de los que ya están registrados.
 - Si no hay equipos libres o no hay estudiantes, avisa y no continúa.
@@ -83,7 +84,7 @@ Es la historia que más puntos tiene porque toca tres módulos a la vez.
 
 > Como administrador, quiero registrar la devolución de un equipo para actualizar su disponibilidad.
 
-Para darla por terminada:
+**Criterios de aceptación:**
 - Solo muestra los préstamos que siguen activos.
 - Si no hay ninguno, lo dice.
 - El préstamo pasa a *Devuelto* y guarda la fecha.
@@ -97,7 +98,7 @@ Para darla por terminada:
 
 > Como administrador, quiero consultar los equipos actualmente prestados.
 
-Para darla por terminada:
+**Criterios de aceptación:**
 - Muestra solo los préstamos activos.
 - De cada uno se ve el equipo, el estudiante y la fecha.
 - Si no hay ninguno, lo dice.
@@ -110,7 +111,7 @@ Para darla por terminada:
 
 > Como administrador, quiero consultar el historial de préstamos realizados.
 
-Para darla por terminada:
+**Criterios de aceptación:**
 - Muestra todos los préstamos, activos y devueltos.
 - Se ve el estado de cada uno y la fecha de devolución si ya se devolvió.
 - El historial no se pierde al cerrar el programa.
@@ -123,7 +124,7 @@ Para darla por terminada:
 
 > Como administrador, quiero eliminar un equipo del inventario cuando ya no esté disponible.
 
-Para darla por terminada:
+**Criterios de aceptación:**
 - Pide confirmación antes de borrar.
 - Si el equipo está prestado, no lo deja y dice que primero hay que registrar la devolución.
 - Si está disponible, lo borra del inventario.
@@ -171,7 +172,7 @@ Sprint Planning.
 Sale de la observación que dejé en HU03 durante la Review: el enunciado pide documento, nombre,
 correo y programa académico, y hoy solo se piden los tres primeros.
 
-Para darla por terminada:
+**Criterios de aceptación:**
 - Al registrar un estudiante también se pide el programa académico.
 - No deja el programa vacío.
 - Queda guardado en `estudiantes.json` junto con los demás datos.
