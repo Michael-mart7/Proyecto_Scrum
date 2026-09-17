@@ -25,6 +25,13 @@
 **Total compromiso firme (HU01-HU05):** 16 puntos
 **Total adicional (HU06-HU08):** 13 puntos
 
+## Criterios de aceptacion
+
+Antes de estimar, Juan leyo los criterios de aceptacion de cada historia y los revisamos entre
+los tres para que todos entendieramos lo mismo por "terminado". Estan escritos debajo de cada
+historia en el [Product Backlog](../01_Product_Backlog/Product_Backlog.md), y son los que se
+usan en la Sprint Review para aceptar o no cada historia.
+
 ## Estimaciones y justificaciones
 
 Estimamos en Story Points y no en horas: cada numero tiene en cuenta cuanto trabajo lleva la

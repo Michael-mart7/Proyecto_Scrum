@@ -1,7 +1,9 @@
 """
-Fragmento para main.py
-Funcion elegir_de_lista (T10) - tarea M5 de Marlon
-Pegar dentro de main.py, junto a las demas funciones del menu.
+menu_elegir_de_lista.py
+Funcion elegir_de_lista (T10)
+Responsable: Marlon Sanabria
+
+main.py la importa para elegir equipos, estudiantes y prestamos de una lista.
 """
 
 
