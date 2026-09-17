@@ -185,9 +185,7 @@ sistema.
 
 ## En Jira
 
-Las historias también están en el tablero de Jira, con sus puntos, prioridad y responsable. Las
-ocho del Sprint están dentro de *Sprint 1 - MVP Prestamos*, y HU09 quedó en el Backlog.
+Las ocho historias también están en el tablero de Jira, dentro de *Sprint 1 - MVP Prestamos*,
+con sus puntos, prioridad y responsable.
 
 ![Sprint 1 en Jira](../02_Sprint_Planning/Capturas/sprint_backlog_jira.png)
-
-![Backlog en Jira](Capturas/backlog_jira.png)

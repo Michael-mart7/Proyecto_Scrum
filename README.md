@@ -47,8 +47,7 @@ El programa trae datos de ejemplo en `09_Codigo/datos/` para poder probarlo de u
 ```
 Proyecto_Scrum/
 ├── 01_Product_Backlog/
-│   ├── Product_Backlog.md    historias de usuario, prioridad y puntos
-│   └── Capturas/             backlog en Jira
+│   └── Product_Backlog.md    historias de usuario, prioridad y puntos
 ├── 02_Sprint_Planning/
 │   ├── Acta_Sprint_Planning.md   sprint goal, estimaciones y sprint backlog
 │   └── Capturas/             sprint, tablero y una tarjeta en Jira
