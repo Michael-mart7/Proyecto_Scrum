@@ -71,6 +71,20 @@ Las pruebas son manuales, desde la consola. El plan está en `07_Pruebas/Plan_de
 tiene 36 casos: por cada historia hay al menos uno positivo y uno negativo, más algunos de borde
 como opciones inválidas en el menú o un JSON dañado.
 
+Repartimos los casos entre los tres. Se ejecutaron los 36 y **los 36 cumplen**.
+Cada caso tiene anotado lo que salió en pantalla, y los más importantes tienen su captura.
+
+Las pruebas encontraron dos errores, y los dos se corrigieron:
+
+- **CP-17:** si no había estudiantes registrados, el préstamo dejaba elegir un equipo y solo
+  después avisaba que no había a quién prestárselo. Se cambió `main.py` para revisar primero
+  los estudiantes.
+- **Datos de ejemplo:** al reorganizar `estudiantes.json`, los estudiantes quedaron sin su `id`
+  y registrar uno nuevo hacía caer el programa. Se les agregó el `id` de nuevo.
+
+El segundo nos dejó una lección: no basta con probar el código, también hay que volver a probar
+después de cambiar los datos.
+
 ## Dificultades
 
 **Organizar el trabajo en Git.** Lo más difícil no fue programar, fue coordinarnos. Al principio
