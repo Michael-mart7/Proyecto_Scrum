@@ -51,6 +51,7 @@ Proyecto_Scrum/
 ├── Acta_Sprint_Planning.md
 ├── 05_Sprint_Review/
 │   └── Acta_Sprint_Review.md
+├── Acta_Sprint_Retrospective.md
 ├── 07_Pruebas/
 │   ├── Plan_de_Pruebas.md
 │   └── Imagenes/             capturas de los casos de prueba
