@@ -133,16 +133,16 @@ Para darla por terminada:
 
 ## Resumen
 
-| Historia | Prioridad | Puntos | Compromiso |
-|---|---|---|---|
-| HU01 Registrar equipos | Alta | 3 | Firme |
-| HU02 Consultar equipos | Alta | 2 | Firme |
-| HU03 Registrar estudiantes | Alta | 3 | Firme |
-| HU04 Registrar préstamo | Alta | 5 | Firme |
-| HU05 Registrar devolución | Alta | 3 | Firme |
-| HU06 Equipos prestados | Media | 5 | Si alcanza el tiempo |
-| HU07 Historial | Media | 5 | Si alcanza el tiempo |
-| HU08 Eliminar equipos | Baja | 3 | Si alcanza el tiempo |
+| Historia | Prioridad | Puntos | Compromiso | Estado al cierre |
+|---|---|---|---|---|
+| HU01 Registrar equipos | Alta | 3 | Firme | Terminada |
+| HU02 Consultar equipos | Alta | 2 | Firme | Terminada |
+| HU03 Registrar estudiantes | Alta | 3 | Firme | Terminada con observación |
+| HU04 Registrar préstamo | Alta | 5 | Firme | Terminada |
+| HU05 Registrar devolución | Alta | 3 | Firme | Terminada |
+| HU06 Equipos prestados | Media | 5 | Si alcanza el tiempo | Terminada |
+| HU07 Historial | Media | 5 | Si alcanza el tiempo | Terminada |
+| HU08 Eliminar equipos | Baja | 3 | Si alcanza el tiempo | Terminada |
 
 **Total:** 29 puntos. 16 del compromiso firme y 13 del alcance adicional.
 
@@ -152,3 +152,32 @@ también cuenta.
 
 Las cinco primeras son el flujo mínimo que hay que poder demostrar: registrar un equipo,
 registrar un estudiante, prestar, consultar y devolver.
+
+La columna *Compromiso* dice cómo se planificó cada historia al empezar el Sprint, y *Estado al
+cierre* cómo quedó después de la Sprint Review. Al final se terminaron las ocho, incluidas las
+tres que eran alcance adicional.
+
+## Pendiente para el siguiente Sprint
+
+Esto es lo que quedó por hacer. Lo dejo aquí para que no se pierda y se priorice en la próxima
+Sprint Planning.
+
+### HU09 — Programa académico del estudiante
+**Prioridad:** Alta · **Puntos:** 2
+
+> Como administrador, quiero registrar el programa académico de cada estudiante para saber a qué
+> programa pertenece quien se lleva un equipo.
+
+Sale de la observación que dejé en HU03 durante la Review: el enunciado pide documento, nombre,
+correo y programa académico, y hoy solo se piden los tres primeros.
+
+Para darla por terminada:
+- Al registrar un estudiante también se pide el programa académico.
+- No deja el programa vacío.
+- Queda guardado en `estudiantes.json` junto con los demás datos.
+- Los estudiantes que ya estaban registrados siguen cargando sin error.
+
+Le pongo prioridad alta porque es algo que el enunciado pide desde el principio, y pocos puntos
+porque es agregar un campo a algo que ya funciona. El último criterio es el que tiene más riesgo:
+hay que cuidar que los estudiantes que ya estaban guardados sin ese dato no hagan fallar el
+sistema.

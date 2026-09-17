@@ -46,12 +46,16 @@ El programa trae datos de ejemplo en `09_Codigo/datos/` para poder probarlo de u
 
 ```
 Proyecto_Scrum/
-├── Product_Backlog.md        historias de usuario, prioridad y puntos
+├── 01_Product_Backlog/
+│   └── Product_Backlog.md    historias de usuario, prioridad y puntos
 ├── Acta_Sprint_Planning.md
-├── Acta_Sprint_Review.md
-├── Informe_Final.md          resumen del Sprint y enlaces a los videos
+├── 05_Sprint_Review/
+│   └── Acta_Sprint_Review.md
 ├── 07_Pruebas/
-│   └── Plan_de_Pruebas.md
+│   ├── Plan_de_Pruebas.md
+│   └── Imagenes/             capturas de los casos de prueba
+├── 08_Informe_Final/
+│   └── Informe_Final.md      resumen del Sprint y enlaces a los videos
 └── 09_Codigo/
     ├── main.py               menú principal
     ├── archivos.py           lectura y escritura de los JSON
@@ -63,4 +67,4 @@ Proyecto_Scrum/
 ```
 
 Los enlaces al tablero y a los videos de los eventos están al final del
-[Informe Final](Informe_Final.md).
+[Informe Final](08_Informe_Final/Informe_Final.md).
