@@ -103,7 +103,7 @@ las dejó para el final.
 | Qué | Enlace |
 |---|---|
 | Repositorio | https://github.com/Michael-mart7/Proyecto_Scrum |
-| Tablero | [pegar enlace] |
+| Tablero | https://marlon07721.atlassian.net/jira/software/projects/SCRUM/boards/1 |
 | Video de la Sprint Planning | [pegar enlace] |
 | Video de la Daily | [pegar enlace] |
 | Video de la Sprint Review | [pegar enlace] |
