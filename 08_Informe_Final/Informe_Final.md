@@ -134,9 +134,9 @@ las dejó para el final.
 |---|---|
 | Repositorio | https://github.com/Michael-mart7/Proyecto_Scrum |
 | Tablero | https://marlon07721.atlassian.net/jira/software/projects/SCRUM/boards/1 |
-| Video de la Sprint Planning | [pegar enlace] |
-| Video de la Daily | [pegar enlace] |
-| Video de la Sprint Review | [pegar enlace] |
-| Video de la Retrospectiva | [pegar enlace] |
+| Video de la Sprint Planning | https://drive.google.com/drive/folders/1F3Mm_k4RMjI9YWCgQPWqzSS4b9hFRt3e?usp=sharing |
+| Video de la Daily | https://drive.google.com/drive/folders/1ud2yPLkZvmvIut3YWLTjuKcP2ykn9SCq?usp=sharing |
+| Video de la Sprint Review | https://drive.google.com/drive/folders/1gx4dXnmH1qaSTQ_N_aUKii9bCHAPOFdv?usp=sharing |
+| Video de la Retrospectiva | https://drive.google.com/drive/folders/1TtaUAodrHXbhDbJFUrLcil8nfn7RZclV?usp=sharing |
 | Plan de pruebas | https://github.com/Michael-mart7/Proyecto_Scrum/blob/main/07_Pruebas/Plan_de_Pruebas.md |
 | Registro de impedimentos | https://github.com/Michael-mart7/Proyecto_Scrum/blob/main/04_Impedimentos/Registro_de_Impedimentos.md |
