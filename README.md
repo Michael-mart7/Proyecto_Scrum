@@ -48,10 +48,14 @@ El programa trae datos de ejemplo en `09_Codigo/datos/` para poder probarlo de u
 Proyecto_Scrum/
 ├── 01_Product_Backlog/
 │   └── Product_Backlog.md    historias de usuario, prioridad y puntos
-├── Acta_Sprint_Planning.md
+├── 02_Sprint_Planning/
+│   └── Acta_Sprint_Planning.md   sprint goal, estimaciones y sprint backlog
+├── 03_Daily_Scrum/
+│   └── Daily_01_2026-09-14.md
 ├── 05_Sprint_Review/
 │   └── Acta_Sprint_Review.md
-├── Acta_Sprint_Retrospective.md
+├── 06_Retrospectiva/
+│   └── Acta_Sprint_Retrospective.md
 ├── 07_Pruebas/
 │   ├── Plan_de_Pruebas.md
 │   └── Imagenes/             capturas de los casos de prueba
