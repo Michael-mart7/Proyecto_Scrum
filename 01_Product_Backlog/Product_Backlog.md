@@ -182,3 +182,12 @@ Le pongo prioridad alta porque es algo que el enunciado pide desde el principio,
 porque es agregar un campo a algo que ya funciona. El último criterio es el que tiene más riesgo:
 hay que cuidar que los estudiantes que ya estaban guardados sin ese dato no hagan fallar el
 sistema.
+
+## En Jira
+
+Las historias también están en el tablero de Jira, con sus puntos, prioridad y responsable. Las
+ocho del Sprint están dentro de *Sprint 1 - MVP Prestamos*, y HU09 quedó en el Backlog.
+
+![Sprint 1 en Jira](../02_Sprint_Planning/Capturas/sprint_backlog_jira.png)
+
+![Backlog en Jira](Capturas/backlog_jira.png)

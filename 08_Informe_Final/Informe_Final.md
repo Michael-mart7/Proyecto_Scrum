@@ -140,3 +140,4 @@ las dejó para el final.
 | Video de la Retrospectiva | https://drive.google.com/drive/folders/1TtaUAodrHXbhDbJFUrLcil8nfn7RZclV?usp=sharing |
 | Plan de pruebas | https://github.com/Michael-mart7/Proyecto_Scrum/blob/main/07_Pruebas/Plan_de_Pruebas.md |
 | Registro de impedimentos | https://github.com/Michael-mart7/Proyecto_Scrum/blob/main/04_Impedimentos/Registro_de_Impedimentos.md |
+| Capturas del tablero | https://github.com/Michael-mart7/Proyecto_Scrum/tree/main/02_Sprint_Planning/Capturas |
