@@ -63,7 +63,8 @@ Proyecto_Scrum/
 │   ├── Plan_de_Pruebas.md
 │   └── Imagenes/             capturas de los casos de prueba
 ├── 08_Informe_Final/
-│   └── Informe_Final.md      resumen del Sprint y enlaces a los videos
+│   ├── Informe_Final.md      resumen del Sprint y enlaces a los videos
+│   └── Informe_Final.pdf     el mismo informe, en PDF
 ├── 09_Codigo/
 │   ├── main.py               menú principal
 │   ├── archivos.py           lectura y escritura de los JSON
