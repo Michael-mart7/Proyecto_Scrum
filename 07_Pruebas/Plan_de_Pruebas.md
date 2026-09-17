@@ -119,28 +119,27 @@
 | Transversales | 5      | 0         | 5                 |
 | **Total**     | **36** | **16**    | **20**            |
 
-## Anexo — Verificación inicial del código (14 de septiembre de 2026)
+## Resultado de la ejecución
 
-Antes de arrancar el Sprint se ejecutó una verificación rápida del flujo completo y de los
-casos negativos principales, para confirmar que el MVP arranca. **No sustituye la ejecución
-formal del plan (tarea T15, viernes 18);** se deja como constancia del estado de partida.
+**Fecha:** viernes 18 de septiembre de 2026
 
-Flujo completo ejecutado desde una carpeta distinta a `09_Codigo/` (equivale a CP-36):
-registrar equipo → registrar estudiante → registrar préstamo → listar equipos → consultar
-prestados → registrar devolución → listar equipos. Todos los pasos respondieron como se
-esperaba y los tres JSON quedaron consistentes.
+Se ejecutaron los 36 casos y los 36 cumplen.
 
-Salida real de los casos negativos:
+| Historia      | Casos | Cumplen |
+| ------------- | ----- | ------- |
+| HU01          | 4     | 4       |
+| HU02          | 3     | 3       |
+| HU03          | 5     | 5       |
+| HU04          | 6     | 6       |
+| HU05          | 4     | 4       |
+| HU06          | 3     | 3       |
+| HU07          | 2     | 2       |
+| HU08          | 4     | 4       |
+| Transversales | 5     | 5       |
 
-```
-[X]  Ya existe un equipo registrado con el código 'EQ-001'.
-[X]  Ya existe un estudiante registrado con el documento 1098765432.
-[X]  El documento debe contener solo números.
-[X]  El correo no es válido (ejemplo: nombre@correo.com).
-[OK] Préstamo #1 registrado: 'EQ-001' para Laura Gómez Ríos.
-[X]  No se puede eliminar el equipo 'EQ-001' porque está prestado. Registre primero la devolución.
-[OK] Devolución registrada: el equipo 'EQ-001' vuelve a estar disponible.
-[OK] Equipo 'EQ-001' eliminado del inventario.
-```
+### Errores encontrados y corregidos
 
-Corresponde a los casos CP-02, CP-09, CP-10, CP-11, CP-13, CP-28, CP-19 y CP-29.
+| Caso  | Qué pasaba | Cómo se corrigió |
+| ----- | ---------- | ---------------- |
+| CP-17 | Sin estudiantes registrados, el préstamo dejaba elegir un equipo y solo después avisaba | Se cambió `main.py` para revisar los estudiantes antes de elegir el equipo |
+| —     | Al cambiar los datos de ejemplo, los estudiantes quedaron sin `id` y registrar uno nuevo hacía caer el programa | Se agregó el `id` a los estudiantes de `datos/estudiantes.json` |
