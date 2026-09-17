@@ -27,8 +27,24 @@
 
 ## Estimaciones y justificaciones
 
-> [Anotar aqui si alguien no estuvo de acuerdo con los puntos sugeridos y por que.
-> Ejemplo: "HU06 tiene poco codigo, pero depende de HU04, asi que la incertidumbre es alta."]
+Estimamos en Story Points y no en horas: cada numero tiene en cuenta cuanto trabajo lleva la
+historia, que tan compleja es y que tanto depende de otras.
+
+| Historia | Puntos | Por que |
+|----------|--------|---------|
+| HU01 | 3 | Hay que pedir cuatro datos, validar que no queden vacios y que el codigo no se repita, y guardar en JSON |
+| HU02 | 2 | Es la mas sencilla: recorrer la lista, mostrarla y contar los disponibles |
+| HU03 | 3 | Parecida a HU01, pero con mas validaciones: documento solo numeros y formato del correo |
+| HU04 | 5 | La mas grande del compromiso firme. Toca tres modulos a la vez y tiene que guardar el prestamo y el cambio de estado del equipo juntos |
+| HU05 | 3 | Reutiliza casi todo lo de HU04, solo cambia el estado de vuelta y guarda la fecha |
+| HU06 | 5 | Tiene poco codigo, pero no se puede empezar hasta que HU04 este lista |
+| HU07 | 5 | Igual que HU06: depende de que ya existan prestamos guardados |
+| HU08 | 3 | Borrar es facil, pero hay que confirmar antes y no dejar eliminar un equipo prestado |
+
+**Donde hubo discusion:** en HU06 y HU07. Al principio parecian de 2 o 3 puntos porque solo
+filtran y muestran una lista. Al final quedaron en 5 porque dependen de HU04: si el prestamo se
+atrasa, estas dos quedan bloqueadas, y esa incertidumbre tambien cuenta en la estimacion. Por lo
+mismo quedaron como alcance adicional y no como compromiso firme.
 
 ## Sprint Backlog (tareas tecnicas)
 
