@@ -52,6 +52,8 @@ Proyecto_Scrum/
 │   └── Acta_Sprint_Planning.md   sprint goal, estimaciones y sprint backlog
 ├── 03_Daily_Scrum/
 │   └── Daily_01_2026-09-14.md
+├── 04_Impedimentos/
+│   └── Registro_de_Impedimentos.md
 ├── 05_Sprint_Review/
 │   └── Acta_Sprint_Review.md
 ├── 06_Retrospectiva/

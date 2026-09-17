@@ -102,6 +102,22 @@ y no al final.
 funcionar la lectura de archivos, y con eso todo el programa. Nos sirvió para entender por qué
 vale la pena probar cada módulo apenas se termina, en vez de esperar a juntarlo todo.
 
+## Impedimentos
+
+Durante el Sprint Marlon, como Scrum Master, fue anotando lo que nos frenaba: quién se encargaba
+de resolverlo y qué hicimos. Tuvimos seis y los seis quedaron resueltos.
+
+| Fecha | Impedimento | Responsable | Acción tomada |
+|---|---|---|---|
+| Lunes 14 | No había estructura de carpetas para saber dónde ubicar cada archivo | Marlon | Nadie subió código hasta tener la estructura |
+| Martes 15 | Archivos en carpetas distintas; el programa no arrancaba | Michael | Todo el código quedó en `09_Codigo` |
+| Martes 15 | Una letra de más en `archivos.py` tumbaba todo el programa | Michael | Se corrigió y se acordó probar cada módulo al terminarlo |
+| Jueves 17 | HU06 y HU07 esperaban a que HU04 estuviera lista | Juan | Se terminó HU04 primero para desbloquear las consultas |
+| Viernes 18 | Los estudiantes de ejemplo quedaron sin `id` y registrar uno hacía caer el programa | Michael | Se agregó el `id` y se volvió a probar |
+| Viernes 18 | Capturas de pruebas con el mismo nombre se reemplazaron entre sí | Marlon y Michael | Se recuperaron del historial de Git y se nombran por caso |
+
+El detalle está en `04_Impedimentos/Registro_de_Impedimentos.md`.
+
 ## Qué aprendimos
 
 Que Scrum no es solo repartirse tareas. Lo que de verdad ayudó fue tener los criterios de
@@ -123,3 +139,4 @@ las dejó para el final.
 | Video de la Sprint Review | [pegar enlace] |
 | Video de la Retrospectiva | [pegar enlace] |
 | Plan de pruebas | https://github.com/Michael-mart7/Proyecto_Scrum/blob/main/07_Pruebas/Plan_de_Pruebas.md |
+| Registro de impedimentos | https://github.com/Michael-mart7/Proyecto_Scrum/blob/main/04_Impedimentos/Registro_de_Impedimentos.md |
