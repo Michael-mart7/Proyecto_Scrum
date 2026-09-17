@@ -157,10 +157,10 @@ La columna *Compromiso* dice cómo se planificó cada historia al empezar el Spr
 cierre* cómo quedó después de la Sprint Review. Al final se terminaron las ocho, incluidas las
 tres que eran alcance adicional.
 
-## Pendiente para el siguiente Sprint
+## Pendiente en el Product Backlog
 
-Esto es lo que quedó por hacer. Lo dejo aquí para que no se pierda y se priorice en la próxima
-Sprint Planning.
+Esto salió durante la Sprint Review y no estaba en ninguna de las ocho historias. Lo dejo
+anotado aquí para que no se pierda.
 
 ### HU09 — Programa académico del estudiante
 **Prioridad:** Alta · **Puntos:** 2
