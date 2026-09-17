@@ -49,7 +49,8 @@ Proyecto_Scrum/
 ├── 01_Product_Backlog/
 │   └── Product_Backlog.md    historias de usuario, prioridad y puntos
 ├── 02_Sprint_Planning/
-│   └── Acta_Sprint_Planning.md   sprint goal, estimaciones y sprint backlog
+│   ├── Acta_Sprint_Planning.md   sprint goal, estimaciones y sprint backlog
+│   └── Capturas/             sprint, tablero y una tarjeta en Jira
 ├── 03_Daily_Scrum/
 │   └── Daily_01_2026-09-14.md
 ├── 04_Impedimentos/
