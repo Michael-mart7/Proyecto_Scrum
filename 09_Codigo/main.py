@@ -178,7 +178,8 @@ def historial_prestamos(datos):
         return
 
     for prestamo in todos:
-        print(f"{texto_prestamo(prestamo)} - {prestamo['estado']}")
+        fecha_devolucion = prestamo["fecha_devolucion"] or "pendiente"
+        print(f"{texto_prestamo(prestamo)} - {prestamo['estado']} - devolucion: {fecha_devolucion}")
 
 
 def eliminar_equipo(datos):
