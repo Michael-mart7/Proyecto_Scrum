@@ -70,18 +70,18 @@
 
 ### HU06 — Consultar equipos prestados
 
-| ID       | Tipo     | Precondición               | Pasos    | Resultado esperado                                           | Resultado obtenido | Estado |
-| -------- | -------- | -------------------------- | -------- | ------------------------------------------------------------ | ------------------ | ------ |
-| CP-23 📷 | Positivo | 1 préstamo activo          | Opción 6 | Se muestra solo ese préstamo, con equipo, estudiante y fecha |                    | NE     |
-| CP-24    | Positivo | Tras devolver ese préstamo | Opción 6 | El préstamo devuelto ya **no** aparece                       |                    | NE     |
-| CP-25    | Borde    | Sin préstamos activos      | Opción 6 | Mensaje `[!] No hay préstamos para mostrar.`                 |                    | NE     |
+| ID       | Tipo     | Precondición               | Pasos    | Resultado esperado                                           | Resultado obtenido                                                                                          | Estado |
+| -------- | -------- | -------------------------- | -------- | ------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------- | ------ |
+| CP-23 📷 | Positivo | 1 préstamo activo          | Opción 6 | Se muestra solo ese préstamo, con equipo, estudiante y fecha | ![captura cp-23](imagenes/55.png)                                                                           | NE     |
+| CP-24    | Positivo | Tras devolver ese préstamo | Opción 6 | El préstamo devuelto ya **no** aparece                       | Tras la devolución, la opción 6 mostró "No hay equipos prestados." — el préstamo desapareció de esta lista. | **C**  |
+| CP-25    | Borde    | Sin préstamos activos      | Opción 6 | Mensaje `[!] No hay préstamos para mostrar.`                 | El sistema mostró "No hay equipos prestados." en vez de una lista vacía.                                    | **C**  |
 
 ### HU07 — Historial de préstamos
 
-| ID       | Tipo     | Precondición                   | Pasos    | Resultado esperado                                                                    | Resultado obtenido | Estado |
-| -------- | -------- | ------------------------------ | -------- | ------------------------------------------------------------------------------------- | ------------------ | ------ |
-| CP-26 📷 | Positivo | 1 préstamo activo y 1 devuelto | Opción 7 | Aparecen **los dos**, cada uno con su estado y el devuelto con su fecha de devolución |                    | NE     |
-| CP-27    | Positivo | Cerrar y reabrir el programa   | Opción 7 | El historial conserva los préstamos de la ejecución anterior                          |                    | NE     |
+| ID       | Tipo     | Precondición                   | Pasos    | Resultado esperado                                                                    | Resultado obtenido                                                                                      | Estado |
+| -------- | -------- | ------------------------------ | -------- | ------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- | ------ |
+| CP-26 📷 | Positivo | 1 préstamo activo y 1 devuelto | Opción 7 | Aparecen **los dos**, cada uno con su estado y el devuelto con su fecha de devolución | ![captura cp-24](imagenes/56.png)                                                                       | **C**  |
+| CP-27    | Positivo | Cerrar y reabrir el programa   | Opción 7 | El historial conserva los préstamos de la ejecución anterior                          | Se ejecutó el programa dos veces por separado; el historial mostrado fue idéntico en ambas ejecuciones. | **C**  |
 
 ### HU08 — Eliminar equipo
 
@@ -94,13 +94,13 @@
 
 ### Pruebas transversales
 
-| ID    | Tipo  | Precondición                                | Pasos                                                         | Resultado esperado                                                                                                                                                   | Resultado obtenido                                            | Estado |
-| ----- | ----- | ------------------------------------------- | ------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------- | ------ |
-| CP-32 | Borde | —                                           | Menú principal → escribir `99`                                | Mensaje `[X] Opción inválida, intente de nuevo.` y el menú vuelve a pedir la opción                                                                                  | ![Captura CP-13](Imagenes/14.png)                             | **C**  |
-| CP-33 | Borde | —                                           | Menú principal → escribir `abc`                               | Mismo mensaje que CP-32; el programa no se cae                                                                                                                       | ![Captura CP-13](Imagenes/15.png)                             | **C**  |
+| ID    | Tipo  | Precondición                                | Pasos                                                         | Resultado esperado                                                                                                                                                   | Resultado obtenido                | Estado |
+| ----- | ----- | ------------------------------------------- | ------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------- | ------ |
+| CP-32 | Borde | —                                           | Menú principal → escribir `99`                                | Mensaje `[X] Opción inválida, intente de nuevo.` y el menú vuelve a pedir la opción                                                                                  | ![Captura CP-13](Imagenes/14.png) | **C**  |
+| CP-33 | Borde | —                                           | Menú principal → escribir `abc`                               | Mismo mensaje que CP-32; el programa no se cae                                                                                                                       | ![Captura CP-13](Imagenes/15.png) | **C**  |
 | CP-34 | Borde | Editar `equipos.json` y dejarlo mal formado | Ejecutar `python main.py`                                     | Mensaje `[X] El archivo ... está corrupto: ...` seguido de `[!] Corrija el archivo antes de volver a ejecutar el programa.` — el programa termina sin traza de error | ![Captura CP-13](Imagenes/16.png) | **C**  |
-| CP-35 | Borde | Borrar `datos/prestamos.json`               | Ejecutar `python main.py` → opción 7                          | El programa arranca normalmente tratando la lista como vacía, sin error                                                                                              | ![captura cp-35](Imagenes/17.png)                             | **C**  |
-| CP-36 | Borde | —                                           | Ejecutar `python "ruta/09_Codigo/main.py"` desde otra carpeta | El programa encuentra los JSON igual: las rutas no dependen de dónde se ejecute                                                                                      | ![captura cp-36](Imagenes/18.png)                             | **C**  |
+| CP-35 | Borde | Borrar `datos/prestamos.json`               | Ejecutar `python main.py` → opción 7                          | El programa arranca normalmente tratando la lista como vacía, sin error                                                                                              | ![captura cp-35](Imagenes/17.png) | **C**  |
+| CP-36 | Borde | —                                           | Ejecutar `python "ruta/09_Codigo/main.py"` desde otra carpeta | El programa encuentra los JSON igual: las rutas no dependen de dónde se ejecute                                                                                      | ![captura cp-36](Imagenes/18.png) | **C**  |
 
 
 
