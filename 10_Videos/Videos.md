@@ -10,7 +10,7 @@ para verla.
 |---|---|---|---|
 | Sprint Planning | Lunes 14 | Los tres | https://drive.google.com/drive/folders/1F3Mm_k4RMjI9YWCgQPWqzSS4b9hFRt3e?usp=sharing |
 | Daily Scrum | Lunes 14 | Marlon Sanabria | https://drive.google.com/drive/folders/1ud2yPLkZvmvIut3YWLTjuKcP2ykn9SCq?usp=sharing |
-| Sprint Review | Viernes 18 | Juan Polanco | https://drive.google.com/drive/folders/1gx4dXnmH1qaSTQ_N_aUKii9bCHAPOFdv?usp=sharing |
+| Sprint Review / Video final | Viernes 18 | Juan Polanco | https://drive.google.com/drive/folders/1gx4dXnmH1qaSTQ_N_aUKii9bCHAPOFdv?usp=sharing |
 | Sprint Retrospective | Viernes 18 | Marlon Sanabria | https://drive.google.com/drive/folders/1TtaUAodrHXbhDbJFUrLcil8nfn7RZclV?usp=sharing |
 
 En el video de la Sprint Review también está la demostración completa del programa funcionando:
