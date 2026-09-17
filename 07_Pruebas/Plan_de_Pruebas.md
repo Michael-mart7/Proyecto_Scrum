@@ -25,7 +25,7 @@
 
 | ID       | Tipo     | Precondición             | Pasos                                                                         | Resultado esperado                                                                                                           | Resultado obtenido                                                            | Estado |
 | -------- | -------- | ------------------------ | ----------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------- | ------ |
-| CP-01 📷 | Positivo | Inventario con 3 equipos | Opción 1 → código `EQ-004`, tipo `Portátil`, marca `HP`, modelo `ProBook 440` | Mensaje `[OK] Equipo 'EQ-004' registrado correctamente.`, estado inicial *Disponible*, y el equipo aparece en `equipos.json` | ![Captura CP-13](imagenes/1.png)                                              | **C**  |
+| CP-01 📷 | Positivo | Inventario con 3 equipos | Opción 1 → código `EQ-004`, tipo `Portátil`, marca `HP`, modelo `ProBook 440` | Mensaje `[OK] Equipo 'EQ-004' registrado correctamente.`, estado inicial *Disponible*, y el equipo aparece en `equipos.json` | ![Captura CP-13](Imagenes/1.png)                                              | **C**  |
 | CP-02    | Negativo | EQ-001 ya existe         | Opción 1 → código `EQ-001` + cualquier dato                                   | Mensaje `[X] Ya existe un equipo registrado con el código 'EQ-001'.` y **no** se crea duplicado                              | Ya existe un equipo registrado con el código 'EQ-001'. (No se creó duplicado) | **C**  |
 | CP-03    | Negativo | —                        | Opción 1 → dejar el código vacío y pulsar Enter                               | Mensaje `[X] Este dato no puede quedar vacío.` y el sistema vuelve a pedir el código                                         | Este dato no puede quedar vacio. (El sistema repite hasta rcibir entrada)     | **C**  |
 | CP-04    | Negativo | —                        | Opción 1 → código `eq-001` en minúsculas                                      | Se rechaza igual que CP-02: los códigos no distinguen mayúsculas                                                             | Ya existe un equipo registrado con el código 'EQ-001'.                        | **C**  |
@@ -34,8 +34,8 @@
 
 | ID       | Tipo     | Precondición            | Pasos    | Resultado esperado                                                                         | Resultado obtenido                                                         | Estado |
 | -------- | -------- | ----------------------- | -------- | ------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------- | ------ |
-| CP-05 📷 | Positivo | 3 equipos disponibles   | Opción 2 | Se listan los 3 con código, tipo, marca, modelo y estado, y al final `Disponibles: 3 de 3` | ![Captura CP-13](imagenes/2.png)                                           | **C**  |
-| CP-06    | Positivo | EQ-001 prestado         | Opción 2 | EQ-001 aparece con estado *Prestado* y el conteo baja a `Disponibles: 2 de 3`              | ![Captura CP-13](imagenes/3.png)                                           | **C**  |
+| CP-05 📷 | Positivo | 3 equipos disponibles   | Opción 2 | Se listan los 3 con código, tipo, marca, modelo y estado, y al final `Disponibles: 3 de 3` | ![Captura CP-13](Imagenes/2.png)                                           | **C**  |
+| CP-06    | Positivo | EQ-001 prestado         | Opción 2 | EQ-001 aparece con estado *Prestado* y el conteo baja a `Disponibles: 2 de 3`              | ![Captura CP-13](Imagenes/3.png)                                           | **C**  |
 | CP-07    | Borde    | `equipos.json` con `[]` | Opción 2 | Mensaje `[!] Todavía no hy equipos registrados.` en lugar de una lista vacía               | Efectivamente se muestra mensaje que indica que no hay equipos registrados | **C**  |
 
 ### HU03 — Registrar estudiante
@@ -85,12 +85,12 @@
 
 ### HU08 — Eliminar equipo
 
-| ID       | Tipo     | Precondición      | Pasos                                       | Resultado esperado                                                                                          | Resultado obtenido                             | Estado |
-| -------- | -------- | ----------------- | ------------------------------------------- | ----------------------------------------------------------------------------------------------------------- | ---------------------------------------------- | ------ |
-| CP-28 📷 | Negativo | EQ-001 prestado   | Opción 8 → elegir EQ-001 → confirmar `s`    | Mensaje `[X] No se puede eliminar el equipo 'EQ-001' porque está prestado. Registre primero la devolución.` | ![Captura CP-13](imagenes/4.png)               | **C**  |
-| CP-29 📷 | Positivo | EQ-001 disponible | Opción 8 → elegir EQ-001 → confirmar `s`    | Mensaje `[OK] Equipo 'EQ-001' eliminado del inventario.` y desaparece del listado                           | ![Captura CP-13](imagenes/5.png)               | **C**  |
-| CP-30    | Positivo | —                 | Opción 8 → elegir un equipo → responder `n` | Mensaje `[!] Eliminación cancelada.` y el equipo sigue en el inventario                                     | ![Captura CP-13](imagenes/6.png)               | **C**  |
-| CP-31    | Positivo | Tras CP-29        | Opción 7                                    | El historial **conserva** los préstamos del equipo eliminado                                                | No se ha realizado | **Ne** |
+| ID       | Tipo     | Precondición      | Pasos                                       | Resultado esperado                                                                                          | Resultado obtenido               | Estado |
+| -------- | -------- | ----------------- | ------------------------------------------- | ----------------------------------------------------------------------------------------------------------- | -------------------------------- | ------ |
+| CP-28 📷 | Negativo | EQ-001 prestado   | Opción 8 → elegir EQ-001 → confirmar `s`    | Mensaje `[X] No se puede eliminar el equipo 'EQ-001' porque está prestado. Registre primero la devolución.` | ![Captura CP-13](Imagenes/4.png) | **C**  |
+| CP-29 📷 | Positivo | EQ-001 disponible | Opción 8 → elegir EQ-001 → confirmar `s`    | Mensaje `[OK] Equipo 'EQ-001' eliminado del inventario.` y desaparece del listado                           | ![Captura CP-13](Imagenes/5.png) | **C**  |
+| CP-30    | Positivo | —                 | Opción 8 → elegir un equipo → responder `n` | Mensaje `[!] Eliminación cancelada.` y el equipo sigue en el inventario                                     |      | **C**  |
+| CP-31    | Positivo | Tras CP-29        | Opción 7                                    | El historial **conserva** los préstamos del equipo eliminado                                                | No se ha realizado               | **Ne** |
 
 ### Pruebas transversales
 
