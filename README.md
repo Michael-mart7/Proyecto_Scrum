@@ -63,14 +63,16 @@ Proyecto_Scrum/
 │   └── Imagenes/             capturas de los casos de prueba
 ├── 08_Informe_Final/
 │   └── Informe_Final.md      resumen del Sprint y enlaces a los videos
-└── 09_Codigo/
-    ├── main.py               menú principal
-    ├── archivos.py           lectura y escritura de los JSON
-    ├── equipos.py            inventario de equipos
-    ├── estudiantes.py        registro de estudiantes
-    ├── prestamos.py          préstamos y devoluciones
-    ├── menu_elegir_de_lista.py
-    └── datos/                equipos.json, estudiantes.json, prestamos.json
+├── 09_Codigo/
+│   ├── main.py               menú principal
+│   ├── archivos.py           lectura y escritura de los JSON
+│   ├── equipos.py            inventario de equipos
+│   ├── estudiantes.py        registro de estudiantes
+│   ├── prestamos.py          préstamos y devoluciones
+│   ├── menu_elegir_de_lista.py
+│   └── datos/                equipos.json, estudiantes.json, prestamos.json
+└── 10_Videos/
+    └── Videos.md             enlaces a los videos de cada evento
 ```
 
 Los enlaces al tablero y a los videos de los eventos están al final del
