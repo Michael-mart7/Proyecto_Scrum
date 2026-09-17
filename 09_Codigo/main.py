@@ -191,7 +191,7 @@ def eliminar_equipo(datos):
         return
 
     confirmacion = pedir_texto(f"Seguro que quieres eliminar {equipo['codigo']}? (s/n): ")
-    if confirmacion.lower() != "s":
+    if confirmacion.lower() not in ("s", "si", "sí"):
         print("Eliminacion cancelada.")
         return
 
@@ -256,4 +256,14 @@ def main():
     print("Listo, hasta luego.")
 
 
-main()
+if __name__ == "__main__":
+    try:
+        main()
+    except EOFError:
+        # Si la entrada estandar se corta a mitad de un input() (por ejemplo,
+        # al redirigir datos desde un archivo o un pipe que se queda corto),
+        # no debe verse un traceback: se avisa y se termina limpio.
+        print("\nEntrada finalizada inesperadamente. Programa terminado.")
+    except KeyboardInterrupt:
+        # Ctrl+C tampoco debe mostrar un traceback.
+        print("\nPrograma interrumpido por el usuario.")
