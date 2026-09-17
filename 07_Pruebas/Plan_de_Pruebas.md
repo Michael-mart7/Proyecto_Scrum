@@ -72,7 +72,7 @@
 
 | ID       | Tipo     | Precondición               | Pasos    | Resultado esperado                                           | Resultado obtenido                                                                                          | Estado |
 | -------- | -------- | -------------------------- | -------- | ------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------- | ------ |
-| CP-23 📷 | Positivo | 1 préstamo activo          | Opción 6 | Se muestra solo ese préstamo, con equipo, estudiante y fecha | [Captura CP-23](Imagenes/CP-23.png) | **C**  |
+| CP-23 📷 | Positivo | 1 préstamo activo          | Opción 6 | Se muestra solo ese préstamo, con equipo, estudiante y fecha | ![Captura CP-23](Imagenes/CP-23.png) | **C**  |
 | CP-24    | Positivo | Tras devolver ese préstamo | Opción 6 | El préstamo devuelto ya **no** aparece                       | [Captura CP-24](Imagenes/55.png) Tras la devolución, la opción 6 mostró "No hay equipos prestados." — el préstamo desapareció de esta lista. | **C**  |
 | CP-25    | Borde    | Sin préstamos activos      | Opción 6 | Mensaje `[!] No hay préstamos para mostrar.`                 | [Captura CP-25](Imagenes/56.png) El sistema mostró "No hay equipos prestados." en vez de una lista vacía. | **C**  |
 
