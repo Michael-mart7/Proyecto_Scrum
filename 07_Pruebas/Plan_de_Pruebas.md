@@ -74,14 +74,14 @@
 | -------- | -------- | -------------------------- | -------- | ------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------- | ------ |
 | CP-23 📷 | Positivo | 1 préstamo activo          | Opción 6 | Se muestra solo ese préstamo, con equipo, estudiante y fecha | [Captura CP-23](Imagenes/CP-23.png) | **C**  |
 | CP-24    | Positivo | Tras devolver ese préstamo | Opción 6 | El préstamo devuelto ya **no** aparece                       | [Captura CP-24](Imagenes/55.png) Tras la devolución, la opción 6 mostró "No hay equipos prestados." — el préstamo desapareció de esta lista. | **C**  |
-| CP-25    | Borde    | Sin préstamos activos      | Opción 6 | Mensaje `[!] No hay préstamos para mostrar.`                 | ![Captura CP-25](Imagenes/56.png) El sistema mostró "No hay equipos prestados." en vez de una lista vacía. | **C**  |
+| CP-25    | Borde    | Sin préstamos activos      | Opción 6 | Mensaje `[!] No hay préstamos para mostrar.`                 | [Captura CP-25](Imagenes/56.png) El sistema mostró "No hay equipos prestados." en vez de una lista vacía. | **C**  |
 
 ### HU07 — Historial de préstamos
 
 | ID       | Tipo     | Precondición                   | Pasos    | Resultado esperado                                                                    | Resultado obtenido                                                                                      | Estado |
 | -------- | -------- | ------------------------------ | -------- | ------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- | ------ |
 | CP-26 📷 | Positivo | 1 préstamo activo y 1 devuelto | Opción 7 | Aparecen **los dos**, cada uno con su estado y el devuelto con su fecha de devolución | ![Captura CP-26](Imagenes/CP-26.png) | **C**  |
-| CP-27    | Positivo | Cerrar y reabrir el programa   | Opción 7 | El historial conserva los préstamos de la ejecución anterior                          | ![Captura CP-27](Imagenes/CP-27.png) Se ejecutó el programa dos veces por separado; el historial mostrado fue idéntico en ambas ejecuciones. | **C**  |
+| CP-27    | Positivo | Cerrar y reabrir el programa   | Opción 7 | El historial conserva los préstamos de la ejecución anterior                          | [Captura CP-27](Imagenes/CP-27.png) Se ejecutó el programa dos veces por separado; el historial mostrado fue idéntico en ambas ejecuciones. | **C**  |
 
 ### HU08 — Eliminar equipo
 
