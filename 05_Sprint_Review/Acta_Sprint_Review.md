@@ -48,8 +48,8 @@ solo en memoria.
 
 - **HU03 se acepta con una observación.** Las validaciones funcionan y el estudiante queda
   guardado aunque se cierre el programa. Lo que falta es el **programa académico**, que pide el
-  enunciado: ahora solo se piden nombre, documento y correo. Queda anotado en el Product
-  Backlog como HU09.
+  enunciado: ahora solo se piden nombre, documento y correo. Queda anotado para el siguiente
+  Sprint.
 - **HU06 y HU07 fueron las últimas en quedar listas**, porque dependían de que el préstamo
   funcionara. Aun así se alcanzaron dentro del Sprint y cumplen sus criterios.
 - El objetivo del Sprint se cumplió: se puede registrar, prestar, consultar y devolver, y todo
