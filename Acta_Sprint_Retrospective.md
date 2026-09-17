@@ -1,9 +1,9 @@
 # Acta de Sprint Retrospective
 
-**Fecha:** jueves 17 de septiembre de 2026, justo después de la Sprint Review
+**Fecha:** viernes 18 de septiembre de 2026, justo después de la Sprint Review
 **Asistentes:** Juan Polanco, Marlon Sanabria, Michael Martinez
 **Facilita:** Marlon Sanabria (Scrum Master)
-**Sprint:** Sprint 1 — 14 al 17 de septiembre de 2026
+**Sprint:** Sprint 1 — 14 al 18 de septiembre de 2026
 
 ## De qué se trató esta reunión
 

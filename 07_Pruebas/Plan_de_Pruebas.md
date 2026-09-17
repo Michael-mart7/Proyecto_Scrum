@@ -119,7 +119,7 @@
 | Transversales | 5      | 0         | 5                 |
 | **Total**     | **36** | **16**    | **20**            |
 
-## Anexo — Verificación inicial del código (12 de septiembre de 2026)
+## Anexo — Verificación inicial del código (14 de septiembre de 2026)
 
 Antes de arrancar el Sprint se ejecutó una verificación rápida del flujo completo y de los
 casos negativos principales, para confirmar que el MVP arranca. **No sustituye la ejecución
