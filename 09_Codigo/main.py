@@ -114,6 +114,12 @@ def registrar_prestamo(datos):
         print("No hay equipos disponibles para prestar.")
         return
 
+    # Se revisa antes de elegir el equipo, para no hacer elegir uno si al final
+    # no hay a quien prestarselo.
+    if not datos["estudiantes"]:
+        print("No hay estudiantes registrados. Registra primero un estudiante.")
+        return
+
     equipo = elegir(disponibles, texto_equipo, "equipos disponibles")
     if equipo is None:
         return

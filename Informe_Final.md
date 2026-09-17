@@ -19,20 +19,19 @@ y 13 de alcance adicional (HU06 a HU08).
 
 ## Cómo terminó el Sprint
 
-En la Sprint Review se aceptaron **19 de los 29 puntos**:
+En la Sprint Review se aceptaron **los 29 puntos**:
 
-- **Aceptadas:** HU01, HU02, HU04, HU05 y HU08.
+- **Aceptadas:** HU01, HU02, HU04, HU05, HU06, HU07 y HU08.
 - **Aceptada con observación:** HU03. Funciona y guarda, pero falta pedir el programa académico.
-- **No aceptadas:** HU06 y HU07. No quedaron integradas y vuelven al Product Backlog.
 
-Todo el compromiso firme quedó cumplido. Lo que no alcanzó era alcance adicional.
+Se cumplió el compromiso firme y también el alcance adicional.
 
 ## Cómo nos organizamos
 
 | Integrante | Rol | De qué se encargó |
 |---|---|---|
 | Juan Polanco | Product Owner | Product Backlog, validar las historias, `prestamos.py` y `main.py` |
-| Marlon Sanabria | Scrum Master | Acta de Planning, tablero, `estudiantes.py` y la función para elegir de una lista |
+| Marlon Sanabria | Scrum Master | Acta de Planning, tablero, `estudiantes.py`, la función para elegir de una lista y las consultas de préstamos |
 | Michael Martinez | Developer | `archivos.py`, `equipos.py`, datos de ejemplo y plan de pruebas |
 
 Aunque cada uno tenía un rol, los tres programamos. En un equipo de tres personas no da para que
