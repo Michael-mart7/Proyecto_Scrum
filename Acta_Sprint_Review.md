@@ -20,9 +20,11 @@ recorrido completo:
 2. Registramos un estudiante y probamos con un documento con letras y un correo mal escrito.
 3. Prestamos un equipo a un estudiante.
 4. Consultamos el inventario y se vio el equipo como *Prestado*, con el conteo de disponibles
-   más bajo.
-5. Registramos la devolución.
-6. Volvimos a consultar y el equipo ya aparecía otra vez como *Disponible*.
+   más bajo. En la consulta de equipos prestados apareció el préstamo.
+5. Intentamos eliminar ese equipo y el sistema no lo dejó por estar prestado.
+6. Registramos la devolución.
+7. Volvimos a consultar: el equipo ya aparecía como *Disponible*, dejó de salir en los
+   prestados y en el historial quedó como *Devuelto* con su fecha.
 
 También abrimos los archivos JSON para mostrar que los datos quedan guardados en disco y no
 solo en memoria.
@@ -36,11 +38,11 @@ solo en memoria.
 | HU03 Registrar estudiantes | Aceptada con observación | Valida y guarda bien, pero falta el programa académico |
 | HU04 Registrar préstamo | Aceptada | El equipo cambia solo a *Prestado* y los dos archivos quedan iguales |
 | HU05 Registrar devolución | Aceptada | El equipo vuelve a *Disponible* |
-| HU06 Equipos prestados | No aceptada | La consulta no quedó integrada en `prestamos.py` |
-| HU07 Historial | No aceptada | Igual que HU06 |
+| HU06 Equipos prestados | Aceptada | Muestra solo los activos y el devuelto deja de aparecer |
+| HU07 Historial | Aceptada | Muestra activos y devueltos con su fecha, y se conserva al reabrir |
 | HU08 Eliminar equipos | Aceptada | No deja borrar un equipo prestado |
 
-**Puntos aceptados:** 19 de 29. Los 16 del compromiso firme más los 3 de HU08.
+**Puntos aceptados:** 29 de 29. Todo el compromiso firme y todo el alcance adicional.
 
 ## Observaciones del Product Owner
 
@@ -48,10 +50,8 @@ solo en memoria.
   guardado aunque se cierre el programa. Lo que falta es el **programa académico**, que pide el
   enunciado: ahora solo se piden nombre, documento y correo. Queda anotado para el siguiente
   Sprint.
-- **HU06 y HU07 vuelven al Product Backlog.** En el menú aparecen, pero al elegirlas dicen que
-  todavía no están listas, así que no cumplen sus criterios. Eran alcance adicional y no
-  compromiso firme, y para el próximo Sprint deberían ir de primeras porque dependen de HU04,
-  que ya está hecha.
+- **HU06 y HU07 fueron las últimas en quedar listas**, porque dependían de que el préstamo
+  funcionara. Aun así se alcanzaron dentro del Sprint y cumplen sus criterios.
 - El objetivo del Sprint se cumplió: se puede registrar, prestar, consultar y devolver, y todo
   queda guardado en JSON.
 
@@ -89,15 +89,20 @@ que la demostración empiece limpia.
 >
 > «Opción 2 otra vez: el equipo sale como Prestado y el conteo bajó.»
 >
+> «Con la opción 6 veo los equipos que están prestados ahora mismo, con el estudiante y la
+> fecha.»
+>
+> «Si intento eliminar ese equipo con la opción 8, no me deja: primero hay que registrar la
+> devolución.»
+>
 > «Opción 5, la devolución. Elijo el préstamo y lo cierro.»
 >
-> «Y ahora la comprobación: opción 2, el equipo volvió a estar Disponible. Con eso el ciclo
-> queda cerrado.»
+> «Y ahora la comprobación: opción 2, el equipo volvió a estar Disponible. En la opción 6 ya no
+> aparece, y en la opción 7, el historial, queda el préstamo como Devuelto con su fecha. Con
+> eso el ciclo queda cerrado.»
 
 **Cierre (Juan, como PO)**
 
-> «Con lo que vimos, acepto HU01, HU02, HU04, HU05 y HU08. HU03 la acepto con una observación:
-> falta pedir el programa académico. HU06 y HU07 no las acepto porque todavía no están
-> terminadas, así que vuelven al Product Backlog; eran alcance adicional y no el compromiso del
-> Sprint. En total aceptamos 19 de los 29 puntos. El objetivo se cumplió: se puede prestar,
-> consultar y devolver, y los datos quedan guardados. Gracias.»
+> «Con lo que vimos, acepto HU01, HU02, HU04, HU05, HU06, HU07 y HU08. HU03 la acepto con una
+> observación: falta pedir el programa académico. En total aceptamos los 29 puntos. El objetivo
+> se cumplió: se puede prestar, consultar y devolver, y los datos quedan guardados. Gracias.»

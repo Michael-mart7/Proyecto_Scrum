@@ -42,8 +42,6 @@ El programa trae datos de ejemplo en `09_Codigo/datos/` para poder probarlo de u
 0. Salir
 ```
 
-Las opciones 6 y 7 (HU06 y HU07) todavía no están terminadas y quedaron para el siguiente Sprint.
-
 ## Cómo está organizado
 
 ```
