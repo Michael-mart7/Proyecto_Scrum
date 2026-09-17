@@ -75,4 +75,11 @@ mismo quedaron como alcance adicional y no como compromiso firme.
 ## Riesgos identificados
 
 - HU04 bloquea a HU05, HU06 y HU07: si se atrasa, todo el flujo de prestamos se atrasa.
-- [Agregar otros riesgos que surjan en la reunion.]
+- Cada uno programa su parte por separado y los modulos se importan entre ellos. Si no nos ponemos
+  de acuerdo en donde va cada archivo, el programa no va a arrancar al juntarlo todo.
+- Algunas tareas dependen de funciones que hace otra persona (por ejemplo, prestamos.py necesita
+  archivos.py). Si alguien cambia el nombre o los parametros de una funcion, se rompe lo del otro.
+- Es un Sprint de una semana y los tres tenemos otras clases. Si alguien se enferma o se atrasa
+  un dia, no hay mucho margen para recuperarlo.
+- Si solo probamos al final, un error pequeno en un modulo puede tumbar todo el programa y no
+  sabriamos de donde viene.
